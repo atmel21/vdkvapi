@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+	<body>
+		<form action="/object/fetch" method="post">
+			<label for="key">Enter your key : </label>
+			<input type="text" name="key">
+			<br><br>
+			<label for="value">Enter your timestamp : </label>
+			<input type="text" name="timestamp">
+			<hr>
+			<input type="submit" value="Submit" />
+    	</form>
+    	<p>{{ message }}</p>
+    	<br><br>
+    	<form action="/object">
+    		<br>
+			<input type="submit" value=" Switch to Insert data">
+		</form>
+	</body>			
+</html>

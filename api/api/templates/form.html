@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+	<body>
+		<form action="/object/" method="post">
+			<label for="key">Enter your key : </label>
+			<input type="text" name="key">
+			<br><br>
+			<label for="value">Enter your value : </label>
+			<input type="text" name="value">
+			<hr>
+			<input type="submit" value="Submit" />
+    	</form>
+    	<p>{{ message }}</p>
+    	<form action="/object/fetch">
+    		<br>
+			<input type="submit" value=" Switch to Fetch Data">
+		</form>
+	</body>			
+</html>
